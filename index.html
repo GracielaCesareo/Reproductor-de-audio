@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Reproductor de audio</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  </head>
+  <body>
+    
+    <h1>Reproductor de audio</h1>
+    <img src="sugarMaroon5.jpg">
+    <p><strong>Canción: Sugar, Maroon 5</strong></p>
+    <audio id="repAudio" src="sugar.mp3">
+      <source src="sugar.mp3">
+    </audio>
+    <section id="tiempo">
+      <input type="range" min="0" max="213" step="0.1" value="0.10" id="barra"/>
+    </section>
+    <button id="play" onclick="reproducirAudio();">&#x25b6;</button>
+    <button id="pause" onclick="pausarAudio();">&#10073;&#10073;</button>
+    <button id="stop" onclick="pararAudio();">&#8634;</button>
+    <button id="backward" onclick="retrocederAudio(10);">&#x23ea;</button>
+    <button id="forward" onclick="avanzarAudio(10);">&#x23e9;</button>
+    <button id="up" onclick="subirVolumen(.2);">&#x2b;</button>
+    <button id="down" onclick="bajarVolumen(.2);">&#x2212;</button>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
